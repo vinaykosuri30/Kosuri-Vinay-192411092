@@ -1,0 +1,93 @@
+1)There are 15 chairs in one row and 18 chairs in another row. How many chairs are there in total ?
+#include <stdio.h>
+int main()
+{
+    int a,b,sum;
+    printf("No.of chairs in 1 row =");
+    scanf("%d",&a);
+    printf("No.of chairs in another row =");
+    scanf("%d",&b);
+    sum=a+b;
+    printf("Total No.of chairs =%d",sum);
+    return 0;
+}
+
+
+2) There were 23 passengers on a bus. At the next stop, 12 more passengers are now on the bus?
+#include <stdio.h> 
+int main() 
+{ 
+    int a,b,sum; 
+    printf("No.of passengers in the bus ="); 
+    scanf("%d",&a); 
+    printf("No.of passengers got on to the bus in the next stop="); 
+    scanf("%d",&b); 
+    sum=a+b; 
+    printf("Now total no.of passengers in the bus =%d",sum); 
+     return 0; 
+} 
+
+
+3) A library has 345 fiction books and 278 non-fiction books. How many books are there in total ?
+
+#include <stdio.h>
+int main()
+{
+    int a,b,sum;
+    printf("No.of fiction books in the library =");
+    scanf("%d",&a);
+    printf("No.of non-fiction books in the library =");
+    scanf("%d",&b);
+    sum =a+b;
+    printf("Total no.of books present in the library is %d",sum);
+    return 0;
+}
+
+
+4) Write a c program that takes the birth years of 2 people as input and calculates the age difference between them using arithemetic operators.
+#include <stdio.h>
+int main() {
+    int a,b,agedifference;
+    printf("Age of 1st boy is ");
+    scanf("%d",&a);
+    printf("Age of 2nd boy is ");
+    scanf("%d",&b);
+    agedifference = a-b;
+    if (agedifference<0){
+        agedifference = -agedifference;
+    }
+    printf("Age difference between two boys is %d years",agedifference);
+    return 0;
+}
+
+
+5) Write a C program that takes the length and breadth of a rectangle as input and calculate its area and perimeter using arithmetic operators. 
+#include <stdio.h>
+int main() {
+    int a,b,area,perimeter;
+    printf("Length of rectangle is ");
+    scanf("%d",&a);
+    printf("Breadth of rectangle is ");
+    scanf("%d",&b);
+    area = a*b;
+    perimeter = 2*(a+b);
+    printf("Area of the rectangle is %d and perimeter is %d",area,perimeter);
+    return 0;
+}   
+
+
+6) Write a C program that takes the principal amount rate of interest, and time in years as input and calculates the simple interest using arithmetic operatiors.
+
+#include <stdio.h>
+int main() {
+    float principal, rate, time, simpleInterest;
+    printf("Enter the principal amount: ");
+    scanf("%f", &principal);
+    printf("Enter the rate of interest: ");
+    scanf("%f", &rate);
+    printf("Enter the time in years: ");
+    scanf("%f", &time);
+    simpleInterest = (principal * rate * time) / 100;
+    printf("Simple Interest: %.2f\n", simpleInterest);
+    return 0;
+}
