@@ -112,3 +112,31 @@ int main() {
 
     return 0;
 }
+
+
+8) Imagine you're at a provision store, and you need to buy different products like rice, sugar, and oil. Each product has a price and quantity, and the store applies a 5% tax on the total purchase.
+
+#include <stdio.h>
+int main()
+{
+    float rice_cost,sugar_cost,oil_cost,rice_qty,sugar_qty,oil_qty;
+    float Tax = 0.05; 
+    printf("Enter the rice cost = ");
+    scanf("%f",&rice_cost);
+    printf("Enter the sugar cost = ");
+    scanf("%f",&sugar_cost);
+    printf("Enter the oil cost = ");
+    scanf("%f",&oil_cost);
+    printf("Quantity of rice in kgs = ");
+    scanf("%f",&rice_qty);
+    printf("Quantity of sugar in kgs = ");
+    scanf("%f",&sugar_qty);
+    printf("Quantity of oil in ltrs = ");
+    scanf("%f",&oil_qty);
+    float sub_total = (rice_cost*rice_qty)+(sugar_cost*sugar_qty)+(oil_cost*oil_qty);
+    float total_tax = sub_total*Tax;
+    float total_cost = sub_total + total_tax;
+    printf("Total cost of all item is %f rupess\n",sub_total);
+    printf("Total cost of all items with 5% Tax is %.3frupees",total_cost);
+    return 0;   
+}
