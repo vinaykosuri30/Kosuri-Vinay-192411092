@@ -91,3 +91,24 @@ int main() {
     printf("Simple Interest: %.2f\n", simpleInterest);
     return 0;
 }
+
+
+7) Write a C program that takes two numbers input and calculates the quotient and remainder using division modulus operators.
+
+#include <stdio.h>
+
+int main() {
+    int dividend, divisor, remainder;
+    float quotient;
+    printf("Enter the dividend: ");
+    scanf("%d", &dividend);
+
+    printf("Enter the divisor: ");
+    scanf("%d", &divisor);
+
+   quotient = dividend / divisor;
+   remainder = dividend % divisor;
+   printf("Quotient of two numbers is %.2f and remainder is %d",quotient,remainder);
+
+    return 0;
+}
