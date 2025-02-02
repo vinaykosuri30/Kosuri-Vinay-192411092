@@ -1,4 +1,4 @@
-/ 1)There are 15 chairs in one row and 18 chairs in another row. How many chairs are there in total ? /
+/* 1)There are 15 chairs in one row and 18 chairs in another row. How many chairs are there in total ? */
 #include <stdio.h>
 int main()
 {
@@ -13,7 +13,7 @@ int main()
 }
 
 
-/ 2) There were 23 passengers on a bus. At the next stop, 12 more passengers are now on the bus?/
+/* 2) There were 23 passengers on a bus. At the next stop, 12 more passengers are now on the bus?*/
 #include <stdio.h> 
 int main() 
 { 
@@ -28,7 +28,7 @@ int main()
 } 
 
 
-/ 3) A library has 345 fiction books and 278 non-fiction books. How many books are there in total ?/
+/* 3) A library has 345 fiction books and 278 non-fiction books. How many books are there in total ?*/
 
 #include <stdio.h>
 int main()
@@ -44,7 +44,7 @@ int main()
 }
 
 
-/ 4) Write a c program that takes the birth years of 2 people as input and calculates the age difference between them using arithemetic operators./
+/* 4) Write a c program that takes the birth years of 2 people as input and calculates the age difference between them using arithemetic operators.*/
 #include <stdio.h>
 int main() {
     int a,b,agedifference;
@@ -61,7 +61,7 @@ int main() {
 }
 
 
-/ 5) Write a C program that takes the length and breadth of a rectangle as input and calculate its area and perimeter using arithmetic operators. /
+/* 5) Write a C program that takes the length and breadth of a rectangle as input and calculate its area and perimeter using arithmetic operators. */
 #include <stdio.h>
 int main() {
     int a,b,area,perimeter;
@@ -76,7 +76,7 @@ int main() {
 }   
 
 
-/ 6) Write a C program that takes the principal amount rate of interest, and time in years as input and calculates the simple interest using arithmetic operatiors./
+/* 6) Write a C program that takes the principal amount rate of interest, and time in years as input and calculates the simple interest using arithmetic operatiors.*/
 
 #include <stdio.h>
 int main() {
@@ -93,7 +93,7 @@ int main() {
 }
 
 
-/ 7) Write a C program that takes two numbers input and calculates the quotient and remainder using division modulus operators./
+/* 7) Write a C program that takes two numbers input and calculates the quotient and remainder using division modulus operators.*/
 
 #include <stdio.h>
 
@@ -114,9 +114,10 @@ int main() {
 }
 
 
-/ 8) Imagine you're at a provision store, and you need to buy different products like rice, sugar, and oil. Each product has a price and quantity, and the store applies a 5% tax on the total purchase./
-  #include<stdio.h>
-  int main()
+/* 8) Imagine you're at a provision store, and you need to buy different products like rice, sugar, and oil. Each product has a price and quantity, and the store applies a 5% tax on the total purchase.*/
+ 
+#include<stdio.h>
+int main()
   {
       float rice_price,sugar_price,oil_price,rice_quantity,sugar_quantity,oil_quantity,rice_amount,sugar_amount,oil_amount,total_amount,final_amount;
       float tax=0.05,tax_amount;
@@ -146,7 +147,7 @@ int main() {
   }
 
 
-/ 9. You are at an electronics store purchasing different gadgets like a laptop, headphones, and a phone charger. Each item has a price and quantity, and there is a 10% tax added to the total amount at checkout./
+/* 9. You are at an electronics store purchasing different gadgets like a laptop, headphones, and a phone charger. Each item has a price and quantity, and there is a 10% tax added to the total amount at checkout.*/
 
 #include <stdio.h>
 int main() {
@@ -178,7 +179,4 @@ int main() {
     printf("Total amount of all items including tax is %.2frupees\n",total_cost);
     return 0;
 }
-    printf("Total cost of all item is %f rupess\n",sub_total);
-    printf("Total cost of all items with 5% Tax is %.3frupees",total_cost);
-    return 0;   
-}
+
