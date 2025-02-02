@@ -1,4 +1,4 @@
-1)There are 15 chairs in one row and 18 chairs in another row. How many chairs are there in total ?
+/ 1)There are 15 chairs in one row and 18 chairs in another row. How many chairs are there in total ? /
 #include <stdio.h>
 int main()
 {
@@ -13,7 +13,7 @@ int main()
 }
 
 
-2) There were 23 passengers on a bus. At the next stop, 12 more passengers are now on the bus?
+/ 2) There were 23 passengers on a bus. At the next stop, 12 more passengers are now on the bus?/
 #include <stdio.h> 
 int main() 
 { 
@@ -28,7 +28,7 @@ int main()
 } 
 
 
-3) A library has 345 fiction books and 278 non-fiction books. How many books are there in total ?
+/ 3) A library has 345 fiction books and 278 non-fiction books. How many books are there in total ?/
 
 #include <stdio.h>
 int main()
@@ -44,7 +44,7 @@ int main()
 }
 
 
-4) Write a c program that takes the birth years of 2 people as input and calculates the age difference between them using arithemetic operators.
+/ 4) Write a c program that takes the birth years of 2 people as input and calculates the age difference between them using arithemetic operators./
 #include <stdio.h>
 int main() {
     int a,b,agedifference;
@@ -61,7 +61,7 @@ int main() {
 }
 
 
-5) Write a C program that takes the length and breadth of a rectangle as input and calculate its area and perimeter using arithmetic operators. 
+/ 5) Write a C program that takes the length and breadth of a rectangle as input and calculate its area and perimeter using arithmetic operators. /
 #include <stdio.h>
 int main() {
     int a,b,area,perimeter;
@@ -76,7 +76,7 @@ int main() {
 }   
 
 
-6) Write a C program that takes the principal amount rate of interest, and time in years as input and calculates the simple interest using arithmetic operatiors.
+/ 6) Write a C program that takes the principal amount rate of interest, and time in years as input and calculates the simple interest using arithmetic operatiors./
 
 #include <stdio.h>
 int main() {
@@ -93,7 +93,7 @@ int main() {
 }
 
 
-7) Write a C program that takes two numbers input and calculates the quotient and remainder using division modulus operators.
+/ 7) Write a C program that takes two numbers input and calculates the quotient and remainder using division modulus operators./
 
 #include <stdio.h>
 
@@ -114,28 +114,70 @@ int main() {
 }
 
 
-8) Imagine you're at a provision store, and you need to buy different products like rice, sugar, and oil. Each product has a price and quantity, and the store applies a 5% tax on the total purchase.
+/ 8) Imagine you're at a provision store, and you need to buy different products like rice, sugar, and oil. Each product has a price and quantity, and the store applies a 5% tax on the total purchase./
+  #include<stdio.h>
+  int main()
+  {
+      float rice_price,sugar_price,oil_price,rice_quantity,sugar_quantity,oil_quantity,rice_amount,sugar_amount,oil_amount,total_amount,final_amount;
+      float tax=0.05,tax_amount;
+      printf("Enter rice_quantity=");
+      scanf("%f",&rice_quantity);
+      printf("Enter rice_price=");
+      scanf("%f",&rice_price);
+      rice_amount=rice_quantity*rice_price;
+      printf("rice_amount =%.2f\n",rice_amount);
+      printf("Enter sugar_quantity=");
+      scanf("%f",&sugar_quantity);
+      printf("Enter sugar_price=");
+      scanf("%f",&sugar_price);
+      sugar_amount=sugar_quantity*sugar_price;
+      printf("sugar_amount =%.2f\n",sugar_amount);
+      printf("Enter oil_quantity=");
+      scanf("%f",&oil_quantity);
+      printf("Enter oil_price=");
+      scanf("%f",&oil_price);
+      oil_amount=oil_quantity*oil_price;
+      printf("oil_amount =%.2f\n",oil_amount);
+      total_amount=rice_amount+sugar_amount+oil_amount;
+      tax_amount=total_amount*tax;
+      final_amount=total_amount+tax_amount;
+      printf("final_amount=%.2f",final_amount);
+      return 0;
+  }
+
+
+/ 9. You are at an electronics store purchasing different gadgets like a laptop, headphones, and a phone charger. Each item has a price and quantity, and there is a 10% tax added to the total amount at checkout./
 
 #include <stdio.h>
-int main()
-{
-    float rice_cost,sugar_cost,oil_cost,rice_qty,sugar_qty,oil_qty;
-    float Tax = 0.05; 
-    printf("Enter the rice cost = ");
-    scanf("%f",&rice_cost);
-    printf("Enter the sugar cost = ");
-    scanf("%f",&sugar_cost);
-    printf("Enter the oil cost = ");
-    scanf("%f",&oil_cost);
-    printf("Quantity of rice in kgs = ");
-    scanf("%f",&rice_qty);
-    printf("Quantity of sugar in kgs = ");
-    scanf("%f",&sugar_qty);
-    printf("Quantity of oil in ltrs = ");
-    scanf("%f",&oil_qty);
-    float sub_total = (rice_cost*rice_qty)+(sugar_cost*sugar_qty)+(oil_cost*oil_qty);
-    float total_tax = sub_total*Tax;
-    float total_cost = sub_total + total_tax;
+int main() {
+    float laptop_price,headphone_price,phonecharger_price,laptop_qty,headphones_qty,phonecharger_qty,sub_total,total_cost;
+    float tax = 0.1,total_tax;
+    printf("Cost of one laptop =");
+    scanf("%f",&laptop_price);
+    printf("Cost of one headphone =");
+    scanf("%f",&headphone_price);
+    printf("Cost of one phone charger =");
+    scanf("%f",&phonecharger_price);
+    printf("Number of laptops you want to buy =");
+    scanf("%f",&laptop_qty);
+    printf("Number of headphones you want to buy =");
+    scanf("%f",&headphones_qty);
+    printf("Number of phonechargers you want to buy =");
+    scanf("%f",&phonecharger_qty);
+    laptop_price = laptop_price*laptop_qty;
+    printf("Total laptops cost is %.2frupees\n",laptop_price);
+    headphone_price = headphone_price*headphones_qty;
+    printf("Total headphones cost is %.2frupees\n",headphone_price);
+    phonecharger_price = phonecharger_price*phonecharger_qty;
+    printf("Total phonechargers cost is %.2frupees\n",phonecharger_price);
+    sub_total = laptop_price+headphone_price+phonecharger_price;
+    printf("Total amount of all items is %.2frupees\n",sub_total);
+    total_tax = sub_total*tax;
+    printf("Tax applied on all items is %.2frupees\n",total_tax);
+    total_cost = sub_total+total_tax;
+    printf("Total amount of all items including tax is %.2frupees\n",total_cost);
+    return 0;
+}
     printf("Total cost of all item is %f rupess\n",sub_total);
     printf("Total cost of all items with 5% Tax is %.3frupees",total_cost);
     return 0;   
