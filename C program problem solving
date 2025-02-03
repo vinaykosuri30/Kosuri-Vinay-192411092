@@ -180,3 +180,16 @@ int main() {
     return 0;
 }
 
+
+/* 10) A bank offers foreign exchange services where customers can convert USD to INR. Assume 1 USD = ₹83. */
+
+#include <stdio.h>
+int main()
+{
+    float amount_USD,amount_INR;
+    printf("Enter the amount in USD = ");
+    scanf("%f",&amount_USD);
+    amount_INR = amount_USD*83;
+    printf("The amount in INR is %.1f rupees.",amount_INR);
+    return 0;
+}
