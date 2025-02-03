@@ -193,3 +193,25 @@ int main()
     printf("The amount in INR is %.1f rupees.",amount_INR);
     return 0;
 }
+
+
+/* 11) A customer has multiple deposits and withdrawals in a month. Write a C program that:
+
+Takes n transactions as input.
+Updates the balance after each transaction.
+Displays the total deposits, total withdrawals, and final balance.
+Example:
+
+Initial balance: ₹5000
+Deposit ₹2000 → Balance: ₹7000
+Withdraw ₹1500 → Balance: ₹5500
+Final balance: ₹5500 */
+
+#include <stdio.h>
+int main()
+{
+    int IB = 5000,D = 2000,W = 1500,FB;
+    FB = IB + D - W;
+    printf("Final balance : ₹%d",FB);
+    return 0;
+}
