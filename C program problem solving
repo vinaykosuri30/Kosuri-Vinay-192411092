@@ -215,3 +215,40 @@ int main()
     printf("Final balance : ₹%d",FB);
     return 0;
 }
+
+
+#include <stdio.h>
+int main()
+{
+  int matrix1[2][2],matrix2[2][2];
+  int i,j,a,b;
+  printf("Enter 4 elements for the 2x2 matrix1:\n");
+  for (i=0;i<2;i++) {
+      for (j=0;j<2;j++) {
+          printf("Element [%d] [%d]: ",i,j);
+          scanf("%d",&matrix1[i][j]);
+      }
+  }
+  printf("Enter 4 elements for the 2x2 matrix2:\n");
+  for (a=0;a<2;a++) {
+      for (b=0;b<2;b++) {
+          printf("Element [%d] [%d]: ",a,b);
+          scanf("%d",&matrix2[a][b]);
+      }
+  }
+  printf("\n The 2x2 matrix1 is :\n");
+  for (i=0;i<2;i++) {
+      for (j=0;j<2;j++) {
+          printf(" %d ",matrix1[i][j]);
+      }
+      printf("\n");
+  }
+  printf("\nThe 2x2 matrix2 is: \n");
+  for (a=0;a<2;a++) {
+      for (b=0;b<2;b++) {
+          printf(" %d ",matrix2[a][b]);
+      }
+      printf("\n");
+  }
+    return 0;
+}
