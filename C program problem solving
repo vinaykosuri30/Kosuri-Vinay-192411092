@@ -292,3 +292,37 @@ int main()
     return 0;
 }
 
+
+#include <stdio.h>
+int main()
+{
+    char name[20];
+    printf("Enter ur name: ");
+    scanf("%s", name);
+    printf("Your name is %s.", name);
+    return 0;
+}
+
+
+#include <stdio.h>
+int main()
+{
+    char name[30];
+    printf("Enter name: ");
+    fgets(name, sizeof(name), stdin);  
+    printf("Name: ");
+    puts(name);    
+    return 0;
+}
+
+
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+    char a[10]="Vinay";
+    char b[10]={'K','o','s','u','r','i','\0'};
+    printf("Length of string a = %d \n",strlen(a));
+    printf("Length of string b = %d \n",strlen(b));
+    return 0;
+}
