@@ -338,3 +338,35 @@ int main()
   puts(str2); 
   return 0;
 }
+
+
+#include <stdio.h>
+#include <string.h>
+struct book
+{
+    char bookname[100];
+    char bookauthor[50];
+    int pageno;
+    float price;
+} b1,b2;
+int main()
+{
+    strcpy(b1.bookname,"One Piece");
+    strcpy(b2.bookname,"Naruto");
+    strcpy(b1.bookauthor,"ODA");
+    strcpy(b2.bookauthor,"MASASHI");
+    b1.pageno = 2000;
+    b1.price = 5000;
+    b2.pageno = 1200;
+    b2.price = 1500;
+    printf("Book name: %s\n",b1.bookname);
+    printf("Book author: %s\n",b1.bookauthor);
+    printf("Book pages: %d\n",b1.pageno);
+    printf("Book price: %f\n",b1.price);
+    printf("Book name: %s\n",b2.bookname);
+    printf("Book author: %s\n",b2.bookauthor);
+    printf("Book pages: %d\n",b2.pageno);
+    printf("Book price: %f\n",b2.price);
+    return 0;
+}
+
